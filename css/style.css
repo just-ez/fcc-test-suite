@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Lato', sans-serif;
     background-color: #eee;
@@ -55,13 +60,68 @@ header ul *{
     padding: 7px 20px;
     margin: 10px auto;
 }
-
+.services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 .services .service{
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    width: 70%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .service span{
     display: none;
+    font-size: 100px;
+    margin: 30px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+.boxes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: space-between;
+}
+.boxes h3 {
+    /* width: 100%; */
+    padding: 10px;
+    background-color: silver;
+}
+.boxes div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+.boxes ul {
+    list-style: none;
+    text-align: center;
+}
+.boxes ul li {
+    margin: 5px;
+}
+
+.boxes button {
+    padding: 10px 20px;
+    border: none;
+    background-color: yellow;
 }
 
 @media only screen and (min-width: 768px) {
@@ -78,5 +138,32 @@ header ul *{
         flex-direction: row;
         justify-content: space-around;
     }
+    .services {
+        align-items: left;
+    }
+    .services .service {
+            gap: 20px;
+        text-align: left;
+        flex-direction: row;
+        justify-content: center;
+        /* margin: 0; */
+    }
+    .service span{
+        margin-right: auto;
+    display: block;
+    color: yellow;
+}
+.services .service > div{
+  width: 70%;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    flex-direction: row;
+}
 }
   
