@@ -1,0 +1,82 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+    margin-top: 150px;
+}
+
+body header{
+    position: fixed;
+    top: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+header img{
+    width: 50%;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+header ul *{
+    cursor: pointer;
+}
+
+.email-subscription{
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px 0;
+}
+.email-subscription h1{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.email-subscription #email{
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.email-subscription button{
+    font-size: large;
+    font-weight: bolder;
+    background-color: yellow;
+    border: none;
+    max-width: fit-content;
+    padding: 7px 20px;
+    margin: 10px auto;
+}
+
+.services .service{
+    margin: 50px 0;
+    text-align: center;
+}
+.service span{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    body header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    header img{
+        width: 30%;
+    }    
+    header ul{
+        width: 35%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+  
